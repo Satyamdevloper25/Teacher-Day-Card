@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4CAF50;
+}
+
+.button:hover {
+    background-color: #f06;
+}
+
+/* Message Page Styles */
+.message-page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Ensure there is padding around content */
+}
+
+.message {
+    font-size: 1.5rem; /* Default font size for larger screens */
+    white-space: normal; /* Allows text to wrap */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    width: 100%; /* Full width to adapt to screen size */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Padding around text for better readability */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .message {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .button {
+        font-size: 1.2rem; /* Adjust button font size for smaller screens */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        font-size: 1rem; /* Further reduce font size for very small screens */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .button {
+        font-size: 1rem; /* Further adjust button font size */
+        padding: 8px 16px; /* Further adjust button padding */
+    }
+}
+
+</style>
+<body class="message-page-body">
+    <div>
+        <div class="message">On this special Teacher’s Day, I want to celebrate not just your role as a father,<br> but also the incredible impact you’ve made as a teacher and educator.Your dedication to running our <br>small school, where every child receives not only knowledge but also the care and attention <br>they need, is truly inspiring. Your passion for teaching and your commitment to nurturing young minds <br>reflect the depth  of your kindness and wisdom.</div>
+        <a href="thankyou.html">
+            <button class="button">End</button>
+        </a>
+    </div>
+</body>
+</html>

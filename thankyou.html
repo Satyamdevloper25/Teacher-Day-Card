@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+/* Content Container */
+.content-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Paragraph Styles */
+.thank-you-message {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+/* Animation for heading */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .thank-you-message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .thank-you-message {
+        font-size: 0.9rem;
+    }
+}
+
+</style>
+<body class="thank-you-page-body">
+    <div class="content-container">
+        <h1>Thank You!</h1>
+        <p class="thank-you-message">We truly appreciate your support and dedication. Have a great day!</p>
+    </div>
+</body>
+</html>
